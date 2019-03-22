@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tarea_Labo3</string>
+    <string name="username">username</string>
+    <string name="send">send</string>
+    <string name="gender">gender</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="share">share</string>
+</resources>
