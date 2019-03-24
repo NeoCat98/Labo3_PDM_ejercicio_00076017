@@ -38,7 +38,10 @@ public class NewActivity extends AppCompatActivity {
 
         btn_share.setOnClickListener(v->{
             String result;
-            result = m_intent.getStringExtra(AppConstants.INTENT_KEY_USERNAME)+" "+m_intent.getStringExtra(AppConstants.INTENT_KEY_PASSWORD)+" "+ m_intent.getStringExtra(AppConstants.INTENT_KEY_EMAIL)+" "+m_intent.getStringExtra(AppConstants.INTENT_KEY_GENDER);
+            result = "{ username:"  + m_intent.getStringExtra(AppConstants.INTENT_KEY_USERNAME);
+            result = result+ " password:" +m_intent.getStringExtra(AppConstants.INTENT_KEY_PASSWORD);
+            result = result +" email:"+ m_intent.getStringExtra(AppConstants.INTENT_KEY_EMAIL);
+            result = result +" gender: "+ m_intent.getStringExtra(AppConstants.INTENT_KEY_GENDER)+" }";
             Intent mIntent = new Intent();
             mIntent.setAction(Intent.ACTION_SEND);
             mIntent.setType("text/plain");
